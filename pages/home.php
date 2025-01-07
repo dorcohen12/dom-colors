@@ -11,7 +11,7 @@
             <div class="col-md-8 col-8 file-drop-area m-auto text-center">
                 <span class="choose-file-button">בחר קובץ</span>
                 <span class="file-message">או גרור לכאן</span>
-                <input class="file-input" type="file" name="file" required>
+                <input class="file-input" type="file" name="file" accept=".png, .jpeg, .jpg" required>
             </div>
             <div class="col-md-6 col-6 text-center m-auto pt-3">
                 <button class="button" type="submit">העלה</button>
