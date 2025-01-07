@@ -12,6 +12,10 @@
         protected $ip;
         protected $limit_colors = 5;
 
+        private function normalizeColor($color, $tolerance) {
+            return round($color / $tolerance) * $tolerance;
+        }
+
         private function mergeFile() {
             $output = fopen($this->final_file, 'wb');
             for ($i = 0; $i < $this->total_chunks; $i++) {
@@ -56,12 +60,6 @@
             $resizedImage = imagecreatetruecolor($resizedWidth, $resizedHeight);
             imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $resizedWidth, $resizedHeight, $width, $height);
 
-            // Helper function to normalize colors
-            function normalizeColor($color, $tolerance)
-            {
-                return round($color / $tolerance) * $tolerance;
-            }
-
             // Count colors with tolerance
             $colorCounts = [];
             for ($x = 0; $x < $resizedWidth; $x++) {
@@ -70,9 +68,9 @@
                     $colors = imagecolorsforindex($resizedImage, $rgb);
 
                     // Normalize colors with tolerance
-                    $red = normalizeColor($colors['red'], $tolerance);
-                    $green = normalizeColor($colors['green'], $tolerance);
-                    $blue = normalizeColor($colors['blue'], $tolerance);
+                    $red = $this->normalizeColor($colors['red'], $tolerance);
+                    $green = $this->normalizeColor($colors['green'], $tolerance);
+                    $blue = $this->normalizeColor($colors['blue'], $tolerance);
 
                     // Clamp values to 0-255
                     $red = max(0, min(255, $red));
@@ -141,12 +139,6 @@
             $resizedImage = imagecreatetruecolor($resizedWidth, $resizedHeight);
             imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $resizedWidth, $resizedHeight, $width, $height);
 
-            // Helper function to normalize colors
-            function normalizeColor($color, $tolerance)
-            {
-                return round($color / $tolerance) * $tolerance;
-            }
-
             // Count colors with tolerance
             $colorCounts = [];
             for ($x = 0; $x < $resizedWidth; $x++) {
@@ -155,9 +147,9 @@
                     $colors = imagecolorsforindex($resizedImage, $rgb);
 
                     // Normalize colors with tolerance
-                    $red = normalizeColor($colors['red'], $tolerance);
-                    $green = normalizeColor($colors['green'], $tolerance);
-                    $blue = normalizeColor($colors['blue'], $tolerance);
+                    $red = $this->normalizeColor($colors['red'], $tolerance);
+                    $green = $this->normalizeColor($colors['green'], $tolerance);
+                    $blue = $this->normalizeColor($colors['blue'], $tolerance);
 
                     // Clamp values to 0-255
                     $red = max(0, min(255, $red));
