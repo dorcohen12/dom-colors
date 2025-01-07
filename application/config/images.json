@@ -1,0 +1,181 @@
+{
+    "127.0.0.1": {
+        "MTczNjI0MzUyNQ==.jpg": {
+            "file": "MTczNjI0MzUyNQ==.jpg",
+            "data": [
+                {
+                    "color": {
+                        "r": 128,
+                        "g": 96,
+                        "b": 64,
+                        "hex": "#806040"
+                    },
+                    "percentage": 4.36
+                },
+                {
+                    "color": {
+                        "r": 160,
+                        "g": 128,
+                        "b": 96,
+                        "hex": "#a08060"
+                    },
+                    "percentage": 3.48
+                },
+                {
+                    "color": {
+                        "r": 96,
+                        "g": 64,
+                        "b": 32,
+                        "hex": "#604020"
+                    },
+                    "percentage": 3.07
+                },
+                {
+                    "color": {
+                        "r": 96,
+                        "g": 128,
+                        "b": 160,
+                        "hex": "#6080a0"
+                    },
+                    "percentage": 2.36
+                },
+                {
+                    "color": {
+                        "r": 192,
+                        "g": 192,
+                        "b": 192,
+                        "hex": "#c0c0c0"
+                    },
+                    "percentage": 2.29
+                }
+            ],
+            "time": 1736243525
+        },
+        "MTczNjI0MzUzNA==.png": {
+            "file": "MTczNjI0MzUzNA==.png",
+            "data": [
+                {
+                    "color": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0,
+                        "hex": "#000000"
+                    },
+                    "percentage": 81.97
+                },
+                {
+                    "color": {
+                        "r": 192,
+                        "g": 160,
+                        "b": 64,
+                        "hex": "#c0a040"
+                    },
+                    "percentage": 7.27
+                },
+                {
+                    "color": {
+                        "r": 224,
+                        "g": 192,
+                        "b": 160,
+                        "hex": "#e0c0a0"
+                    },
+                    "percentage": 1.43
+                },
+                {
+                    "color": {
+                        "r": 192,
+                        "g": 160,
+                        "b": 96,
+                        "hex": "#c0a060"
+                    },
+                    "percentage": 1.38
+                },
+                {
+                    "color": {
+                        "r": 96,
+                        "g": 96,
+                        "b": 96,
+                        "hex": "#606060"
+                    },
+                    "percentage": 1.05
+                }
+            ],
+            "time": 1736243534
+        },
+        "MTczNjI0NjMyMQ==.png": {
+            "file": "MTczNjI0NjMyMQ==.png",
+            "data": [
+                {
+                    "color": {
+                        "r": 255,
+                        "g": 0,
+                        "b": 0,
+                        "hex": "#ff0000"
+                    },
+                    "percentage": 66
+                },
+                {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "hex": "#ffffff"
+                    },
+                    "percentage": 34
+                }
+            ],
+            "time": 1736246321
+        },
+        "MTczNjI0NjgzNA==.jpg": {
+            "file": "MTczNjI0NjgzNA==.jpg",
+            "data": [
+                {
+                    "color": {
+                        "r": 224,
+                        "g": 224,
+                        "b": 224,
+                        "hex": "#e0e0e0"
+                    },
+                    "percentage": 73.7
+                },
+                {
+                    "color": {
+                        "r": 192,
+                        "g": 192,
+                        "b": 192,
+                        "hex": "#c0c0c0"
+                    },
+                    "percentage": 13.5
+                },
+                {
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255,
+                        "hex": "#ffffff"
+                    },
+                    "percentage": 11.53
+                },
+                {
+                    "color": {
+                        "r": 224,
+                        "g": 224,
+                        "b": 255,
+                        "hex": "#e0e0ff"
+                    },
+                    "percentage": 0.88
+                },
+                {
+                    "color": {
+                        "r": 192,
+                        "g": 192,
+                        "b": 224,
+                        "hex": "#c0c0e0"
+                    },
+                    "percentage": 0.4
+                }
+            ],
+            "time": 1736246834
+        }
+    }
+}
