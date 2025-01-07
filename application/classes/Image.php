@@ -2,7 +2,7 @@
 	defined('INSITE') or die('No direct script access allowed');
 	class Image {
         protected $allowedExtensions = ['jpeg', 'jpg', 'png'];
-		public $targetDir = 'assets/uploads/';
+	public $targetDir = 'assets/uploads/';
         protected $final_file;
         protected $file_name;
         protected $total_chunks;
@@ -280,6 +280,9 @@
             }
             if(!count($file)) {
                 return ['error' => 'Invalid file chunk data.'];
+            }
+            if($file['size'] > (FILE_LIMIT * 1024)) {
+                return ['error' => 'Maximum upload is '.round(FILE_LIMIT * 1024).'!'];
             }
             $chunkData = file_get_contents($file['tmp_name']);
             $serverChecksum = hash('sha256', $chunkData);
