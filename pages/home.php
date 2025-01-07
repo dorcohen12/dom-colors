@@ -8,12 +8,12 @@
     <h1>העלאת קובץ</h1>
     <div class="text-center mb-2 p-5 upload-area">
         <form class="w-100 m-0 m-auto text-center d-block" action="/" method="POST" id="uploadForm">
-            <div class="col-md-8 col-8 file-drop-area m-auto text-center">
+            <div class="col-md-8 col-12 file-drop-area m-auto text-center">
                 <span class="choose-file-button">בחר קובץ</span>
                 <span class="file-message">או גרור לכאן</span>
                 <input class="file-input" type="file" name="file" accept=".png, .jpeg, .jpg" required>
             </div>
-            <div class="col-md-6 col-6 text-center m-auto pt-3">
+            <div class="col-md-6 col-12 text-center m-auto pt-3">
                 <button class="button" type="submit">העלה</button>
             </div>
         </form>
@@ -49,7 +49,7 @@
                             <td>
                                 <div class="row">
                                     <?php foreach($val['data'] as $data) { ?>
-                                        <div class="col-md-3 col-3">
+                                        <div class="col-md-3 col-6">
                                             <div class="circle" data-toggle="tooltip" title="<?php echo $data['color']['hex'];?> (<?php echo (int)$data['percentage'];?>%)" style="border: 1px solid black; color: gold; text-shadow: 0px 0px 5px white; line-height: 35px; display: inline-block; border-radius: 50%; width: 35px; height: 35px; background: <?php echo htmlspecialchars($data['color']['hex']);?>"></div>
                                             <h5><?php echo (int)$data['percentage'];?>%</h5>
                                             <h5>R: <?php echo $data['color']['r']; ?> G: <?php echo $data['color']['g']; ?> B: <?php echo $data['color']['b'];?></h5>
